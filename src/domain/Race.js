@@ -1,3 +1,4 @@
+import { randomGenerator } from '../utils/random-generator.js';
 import OutputView from '../view/OutputView.js';
 import Car from './Car.js';
 
@@ -17,9 +18,11 @@ class Race {
   // 한 게임 진행 기능
   playOneGame() {
     this.#cars.forEach((car) => {
-      car.move();
+      const random_number = randomGenerator();
+      car.move(random_number);
       car.printStatus();
     });
+    OutputView.printMessage(`\n`);
   }
 
   // 전체 게임 진행 기능
