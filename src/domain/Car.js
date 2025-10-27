@@ -23,7 +23,7 @@ class Car {
 
   printStatus() {
     const status = '-'.repeat(this.#position);
-    OutputView.printMessage(`${this.#name} : ${status}\n`);
+    OutputView.printMessage(`${this.#name} : ${status}`);
   }
 }
 
