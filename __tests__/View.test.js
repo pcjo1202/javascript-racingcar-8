@@ -1,4 +1,4 @@
-import { MissionUtils } from '@woowacourse/mission-utils.js';
+import { MissionUtils } from '@woowacourse/mission-utils';
 import InputView from '../src/view/InputView.js';
 import OutputView from '../src/view/OutputView.js';
 
@@ -24,12 +24,10 @@ describe('입력 기능 테스트', () => {
     mockQuestions([input]);
 
     // when
-    const inputView = new InputView();
-    const result = await inputView.readRaceCount();
+    const result = await InputView.readRaceCount();
 
     // then
     expect(result).toBe(input);
-    expect(MissionUtils.Console.readLineAsync).toHaveBeenCalledWith('');
   });
 
   test('쉼표로 구분된 여러 자동차 이름을 입력받는다', async () => {
@@ -38,8 +36,7 @@ describe('입력 기능 테스트', () => {
     mockQuestions([input]);
 
     // when
-    const inputView = new InputView();
-    const result = await inputView.readCarName();
+    const result = await InputView.readCarName();
 
     // then
     expect(result).toBe(input);

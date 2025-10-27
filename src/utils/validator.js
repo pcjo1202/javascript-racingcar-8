@@ -6,7 +6,7 @@ class Validator {
     const nameList = name.split(','); // 배열로 변환
 
     // 이름이 비어있을 때
-    if (nameList.length === 0) {
+    if (name.length === 0 || nameList.length === 0) {
       throw new Error(ERROR_MESSAGE.CAR_NAME_EMPTY);
     }
     // 이름이 5자 이상일 때
@@ -22,7 +22,7 @@ class Validator {
 
   // 자동자 이름 중복 체크
   static validateNamesDuplication(names = []) {
-    const set = new Set(...names);
+    const set = new Set([...names]);
 
     if (set.size !== names.length) {
       throw new Error(ERROR_MESSAGE.CAR_NAME_DUPLICATION);
