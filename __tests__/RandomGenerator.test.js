@@ -1,4 +1,4 @@
-import { randomGenerator } from '../src/utils/random-generator';
+import { randomGenerator } from '../src/utils/random-generator.js';
 
 describe('무작위 수 생성 테스트', () => {
   test('무작위 수 생성 기능 테스트', () => {

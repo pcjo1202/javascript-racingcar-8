@@ -1,4 +1,4 @@
-import Race from '../src/domain/Race';
+import Race from '../src/domain/Race.js';
 
 describe('경주 진행 기능 테스트', () => {
   test('한 차수 진행 결과 저장 기능 테스트', () => {

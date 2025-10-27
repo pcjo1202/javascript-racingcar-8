@@ -1,4 +1,4 @@
-import Car from '../src/domain/Car';
+import Car from '../src/domain/Car.js';
 
 describe('자동차 도메인 테스트', () => {
   test('자동차는 이름과 초기 위치 0을 가진다.', () => {

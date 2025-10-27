@@ -1,4 +1,4 @@
-import ERROR_MESSAGE from '../constants/error-message';
+import ERROR_MESSAGE from '../constants/error-message.js';
 
 class Validator {
   // 자동차 이름 검증

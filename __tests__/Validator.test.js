@@ -1,5 +1,5 @@
-import ERROR_MESSAGE from '../src/constants/error-message';
-import Validator from '../src/utils/validator';
+import ERROR_MESSAGE from '../src/constants/error-message.js';
+import Validator from '../src/utils/validator.js';
 
 describe('자동차 입력 검증 테스트', () => {
   test('자동차 이름이 비어있을 때 예외 발생', () => {

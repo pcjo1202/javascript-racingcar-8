@@ -1,4 +1,4 @@
-import OutputView from '../view/OutputView';
+import OutputView from '../view/OutputView.js';
 
 class Car {
   #name;
